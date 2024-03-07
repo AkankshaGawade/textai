@@ -1,0 +1,23 @@
+{
+  "name": "enitiate-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.16",
+    "firebase": "^10.7.1",
+    "monsterapi": "^0.0.3",
+    "next": "^14.0.4",
+    "postcss": "8.4.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.3",
+    "styled-jsx": "^5.1.2",
+    "tailwindcss": "3.3.6"
+  }
+}

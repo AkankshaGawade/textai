@@ -27,9 +27,9 @@ const Login = () => {
     router.push('/signup'); 
   };
   return (
-    <div className="flex justify-center items-center h-screen bg-cyan-200">
+    <div className="flex justify-center items-center h-screen bg-sky-200">
       <ToastContainer />
-      <form onSubmit={handleLogin} className="bg-slate-200 p-8 rounded shadow-md text-black">
+      <form onSubmit={handleLogin} className="bg-black p-8 rounded shadow-md text-white">
         <h2 className="text-2xl mb-4 ">Login</h2>
         <input
           type="email"
@@ -43,19 +43,20 @@ const Login = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full mb-4 p-2 rounded border"
+          className="w-full mb-4 p-2 rounded border text-black"
         />
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded">
+        <button type="submit" className="w-full bg-blue-300 text-black py-2 rounded">
           Log In
         </button>
 
         <button
           type="button"
-          className="text-black py-2 rounded"
+          className="text-white py-2 rounded"
           onClick={handleSignRedirect}
         >
             Signup here 
         </button>
+        
 
       </form>
     </div>

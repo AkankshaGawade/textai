@@ -25,9 +25,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-cyan-200">
+    <div className="flex justify-center items-center h-screen bg-sky-200">
       <ToastContainer />
-      <form onSubmit={handleSignup} className="bg-gray-100 p-8 rounded shadow-md text-black">
+      <form onSubmit={handleSignup} className="bg-black p-8 rounded shadow-md text-white">
         <h2 className="text-2xl mb-4">Sign Up</h2>
         <input
           type="email"
@@ -41,14 +41,14 @@ const Signup = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full mb-4 p-2 rounded border"
+          className="w-full mb-4 p-2 rounded border text-black"
         />
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded">
+        <button type="submit" className="w-full bg-blue-300 text-black py-2 rounded">
           Sign Up
         </button>
         <button
           type="button"
-          className="text-black py-2 rounded"
+          className="text-white py-2 rounded"
           onClick={handleLoginRedirect}
         >
           Already have an account? Login

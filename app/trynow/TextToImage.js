@@ -68,7 +68,7 @@ const TextToImageGenerator = ({ apiKey }) => {
   return (
     <div className="text-to-image-generator">
       <textarea
-        className="text-input"
+        className="text-input text-black"
         placeholder="Please enter text for image or video generation"
         value={textInput}
         onChange={(e) => setTextInput(e.target.value)}
@@ -88,13 +88,13 @@ const TextToImageGenerator = ({ apiKey }) => {
       {loadingVideo && <div className="loader"><div className="spinner"></div>Generating Video...</div>}
       {generatedImage && (
         <div className="generated-content">
-          <h2>Generated Image</h2>
+          <h2 className='text-white'>Generated Image</h2>
           <img src={generatedImage} alt="Generated" />
         </div>
       )}
       {gifUrl && (
         <div className="generated-content">
-          <h2>Generated Video</h2>
+          <h2 className='text-white'>Generated Video</h2>
           <img src={gifUrl} alt="Generated GIF" />
         </div>
       )}

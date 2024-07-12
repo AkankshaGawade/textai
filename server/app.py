@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Setting up Replicate API token
-os.environ['REPLICATE_API_TOKEN'] = 'r8_TkdELkGcPKMkq3aEUzA9WGKh2VBSTyj3kTKry'
+os.environ['REPLICATE_API_TOKEN'] = 'r8_LY72duaClGT7JotF6xvpgkK7IsBPONg0GOeZj'
 
 
 @app.route('/')
